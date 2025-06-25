@@ -10,6 +10,17 @@ keywords = ["sql", "database", "embedded", "sqlite"]
 categories = ["database"]
 readme = "README.md"
 
+[profile.release]
+debug = true
+opt-level = 3
+overflow-checks = true
+panic = "abort"
+
+[profile.test]
+debug = true
+overflow-checks = true
+panic = "abort"
+
 [dependencies]
 
 [package.metadata.tarpaulin]
