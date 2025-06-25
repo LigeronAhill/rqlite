@@ -1,7 +1,7 @@
 # RQLite
 
 [![License](https://img.shields.io/badge/license-MIT)](LICENSE)
-[![Build Status](https://github.com/LigeronAhill/sqlite/actions/workflows/ci.yml/badge.svg)](https://github.com/yourusername/rqlite/actions)
+[![Build Status](https://github.com/LigeronAhill/rqlite/actions/workflows/ci.yml/badge.svg)](https://github.com/yourusername/rqlite/actions)
 
 **RQLite** (Rust Query Lite) — это легковесная встраиваемая SQL-база данных, написанная на Rust, вдохновлённая SQLite.
 
