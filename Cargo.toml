@@ -22,6 +22,8 @@ overflow-checks = true
 panic = "abort"
 
 [dependencies]
+# logger
+tracing = "0.1.41"
 
 [package.metadata.tarpaulin]
 exclude = ["tests/*"]
