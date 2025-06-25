@@ -1,0 +1,13 @@
+[package]
+name = "rqlite"
+version = "0.0.1"
+edition = "2024"
+authors = ["Aleksandr Provotorov <provotorov@inbox.ru>"]
+description = "Lightweight high-performance pure-rust transactional embedded database."
+repository = "https://github.com/LigeronAhill/sqlite"
+license = "MIT"
+keywords = ["sql", "database", "embedded", "sqlite"]
+categories = ["database"]
+readme = "README.md"
+
+[dependencies]
