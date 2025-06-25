@@ -9,7 +9,7 @@ impl Display for Error {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         match self {
             Self::Custom(s) => write!(f, "Custom error: {s}"),
-            _ => write!(f, "{self:?}"),
+            // _ => write!(f, "{self:?}"),
         }
     }
 }
