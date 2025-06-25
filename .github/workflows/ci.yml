@@ -60,7 +60,7 @@ jobs:
           CARGO_TARPAULIN_NO_DEFAULT_FEATURES: false
 
       - name: Upload coverage report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: coverage-report
           path: ./coverage
@@ -96,3 +96,10 @@ jobs:
 
       - name: Build docs
         run: cargo doc --no-deps --all-features
+
+      - name: Deploy to GitHub Pages (optional)
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./target/doc
