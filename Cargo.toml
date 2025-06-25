@@ -11,3 +11,6 @@ categories = ["database"]
 readme = "README.md"
 
 [dependencies]
+
+[package.metadata.tarpaulin]
+exclude = ["tests/*"]
